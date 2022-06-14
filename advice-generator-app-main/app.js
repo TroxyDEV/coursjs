@@ -18,7 +18,7 @@ function getAdvice() {
     .then((adviceData) => {
       const Adviceobj = adviceData.slip;
       console.log(Adviceobj);
-      resultDiv.innerHTML = `<p> " ${Adviceobj.advice} " ${Adviceobj.id}</p>`;
+      resultDiv.innerHTML = `<p id = "Advice"> " ${Adviceobj.advice} " <span id = "id"> ADVICE #${Adviceobj.id} </span> </p>`;
     })
     .catch((error) => {
       console.log("error");
